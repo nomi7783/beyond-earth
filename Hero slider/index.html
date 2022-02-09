@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"  />
+
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        section {
+            background-color: #081519;
+            height: 100vh
+        }
+    
+        .players-slider {
+            padding-top: 50px;
+        }
+    
+        .players-slider .details {
+    
+            background: #081519;
+            overflow: hidden;
+            border: 1px solid #21f3e9;
+            height: 500px;
+            opacity: .4;
+            transition: all 0.2s ease;
+            margin: 0 0.5rem;
+        }
+    
+    
+    
+        .players-slider .slick-center .details {
+            background: #0e343c;
+            height: 600px;
+            opacity: 1;
+            overflow: initial;
+            transition: all 0.2s ease;
+        }
+    
+        .slick-track {
+            display: flex;
+            align-items: center;
+        }
+    
+    
+        .players-slider .details {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .players-slider .details img {
+            height: 100%;
+            width: auto;
+            max-width: none;
+            top: 5rem;
+            position:relative
+           
+        }
+    
+        .players-slider .slick-center .details img {
+            z-index: 999;
+            top: 0rem;
+           
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+
+    <section >
+    <div class="players-slider">
+       
+        <div>
+            <div class="details">
+                <img src="./img/androxus.webp" alt="bomb-king">
+            </div>
+        </div>
+
+        <div>
+            <div class="details">
+                <img src="./img/atlas.webp" alt="bomb-king">
+            </div>
+        </div>
+
+        <div>
+            <div class="details">
+                <img src="./img/bomb-king.webp" alt="bomb-king">
+            </div>
+        </div>
+
+        <div>
+            <div class="details">
+                <img src="./img/buck.webp" alt="bomb-king">
+            </div>
+        </div>
+
+
+        <div>
+            <div class="details">
+                <img src="./img/jenos.webp" alt="bomb-king">
+            </div>
+        </div>
+
+
+        
+        <div>
+            <div class="details">
+                <img src="./img/koga.webp" alt="bomb-king">
+            </div>
+        </div>
+
+        <div>
+            <div class="details">
+                <img src="./img/sha-lin.webp" alt="bomb-king">
+            </div>
+        </div>
+
+
+        <div>
+            <div class="details">
+                <img src="./img/terminus.webp" alt="bomb-king">
+            </div>
+        </div>
+
+
+        <div>
+            <div class="details">
+                <img src="./img/tiberius.webp" alt="bomb-king">
+            </div>
+        </div>
+
+
+        <div>
+            <div class="details">
+                <img src="./img/torvald.webp" alt="bomb-king">
+            </div>
+        </div>
+
+        
+    </div>
+
+    
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" ></script>
+
+
+
+    <script>
+        $('.players-slider').slick({
+centerMode: true,
+  centerPadding: '70px',
+  dots: false,
+  infinite: true,
+  speed: 200,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  arrows:false,
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    </script>
+</body>
+</html>
